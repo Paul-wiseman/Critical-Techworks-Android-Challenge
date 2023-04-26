@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/headlineFragment">
+
+    <fragment
+        android:id="@+id/headlineFragment"
+        android:name="com.example.criticaltechworkschallenge.presentation.ui.fragment.headline.TopHeadlineFragment"
+        tools:layout="@layout/fragment_headline">
+        <action
+            android:id="@+id/action_headlineFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.example.criticaltechworkschallenge.presentation.ui.fragment.newsdetail.NewsDetailFragment"
+        tools:layout="@layout/fragment_news_detail">
+        <argument
+            android:name="article"
+            app:argType="com.example.criticaltechworkschallenge.entity.ArticlePresentationModel" />
+    </fragment>
+</navigation>

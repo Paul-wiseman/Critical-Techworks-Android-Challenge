@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CriticalTechWorksChallenge</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="posted_by">Posted by</string>
+    <string name="text_retry">Retry</string>
+    <string name="top_headlines">Top Headlines</string>
+    <string name="request_news">Request news</string>
+    <string name="author">Posted by %1$s</string>
+    <string name="cancel">Cancel</string>
+    <string name="prompt_info_title">Authenticate with fingerprint</string>
+    <string name="prompt_info_description">Place your fingerprint on your phone</string>
+</resources>
